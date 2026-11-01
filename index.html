@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ПР 2: Основи JS — Карасьов Ігор (РПЗ 23 2/9)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <h1>Практична робота №2: Основи JavaScript</h1>
+      <p class="student-info">Виконав: <strong>Карасьов Ігор</strong>, група <strong>РПЗ 23 2/9</strong></p>
+    </header>
+
+    <main class="grid">
+
+      <!-- Завдання 1 -->
+      <section class="card">
+        <h2>Завдання 1: Порівняння літер у рядках</h2>
+        <p class="description">
+          Підрахунок літери <code>"a"</code> (або будь-якої іншої за завданням <strong>*</strong>) 
+          за допомогою циклу <code>for</code>, методів <code>.length</code> та <code>.charAt()</code>.
+        </p>
+
+        <pre class="code-preview"><code>const firstRow = 'Slow and steady wins the race';
+const secondRow = 'You can say that again';
+
+console.log(getRow(firstRow, secondRow));
+// 'You can say that again'</code></pre>
+
+        <button id="btn-task1" class="btn btn-primary">
+          ▶ Запустити Завдання 1 (prompt / alert)
+        </button>
+      </section>
+
+      <!-- Завдання 2 -->
+      <section class="card">
+        <h2>Завдання 2: Форматування номерів телефону</h2>
+        <p class="description">
+          Функція <code>formattedPhone(phone)</code> перетворює рядок до формату 
+          <code>+38 (0XX) XXX-XX-XX</code> та перевіряє коректність.
+        </p>
+
+        <pre class="code-preview"><code>formattedPhone('+80664567890') // +8 (066) 456-78-90
+formattedPhone('+380664567890') // +38 (066) 456-78-90
+formattedPhone('80971234567')   // +38 (097) 123-45-67
+formattedPhone('0671234567')    // +38 (067) 123-45-67
+formattedPhone('12345')         // Невірний формат...</code></pre>
+
+        <button id="btn-task2" class="btn btn-primary">
+          ▶ Запустити Завдання 2 (prompt / alert)
+        </button>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>💡 <em>Результати викликів також автоматично виведені у консоль (натисніть F12 / Option+Cmd+I).</em></p>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
